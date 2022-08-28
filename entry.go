@@ -3,30 +3,47 @@ package main
 import (
 	"fmt"
 	"going/puzzles"
+	//"time"
+	//"time"
 )
 
+type People struct {
+	Name string
+}
+
+func (p People) Strings() string {
+	return fmt.Sprintf("%v", p)
+}
+
 func main() {
-	//p := Test{Name: "gorgine", Age: 24}
-	//fmt.Printf("%v\n", p)
-	//fmt.Printf("%+v\n", p)
-	//fmt.Printf("%#v\n", p)
-	//db, err := g.InitDB()
-	//if err != nil {
-	//	log.Fatal(err.Error())
-	//}
-	//fmt.Println(db)
+	//ch := make(chan int, 1000)
+	//done := make(chan bool)
+	//go func() {
+	//	for i := 0; i < 10; i++ {
+	//		ch <- i
+	//	}
+	//	close(ch)
 	//
-	//err1 := db.AutoMigrate(&g.User{})
-	//if err1 != nil {
-	//	log.Fatal(err1.Error())
-	//}
+	//}()
+	//go func() {
+	//	for {
+	//		a, ok := <-ch
+	//		if !ok {
+	//			fmt.Println("close")
+	//			done <- true
+	//			return
+	//		}
+	//		fmt.Println("a: ", a)
+	//	}
+	//}()
+	//fmt.Println("ok")
+	////time.Sleep(time.Second * 100)
+	//<- done
+
+	//chan1 := make(chan bool, 1)
+	//chan1 <- true
 	//
-	//user := g.User{
-	//	Username: "hwwgj",
-	//	Age:      24,
-	//}
-	//db.Create(&user)
-	//fmt.Println(user.ID)
-	res := puzzles.PrintString('a')
-	fmt.Println(res)
+	//fmt.Println(<-chan1)
+	//fmt.Println(<-chan1)
+	puzzles.Fibonacci(10)
 }
