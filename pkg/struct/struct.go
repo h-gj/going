@@ -4,26 +4,22 @@ import "fmt"
 
 //  Refer to => https://zetcode.com/golang/struct/
 
-
 type Person struct {
 	Name string
-	Age int
+	Age  int
 }
-
 
 type Order struct {
-	Id int
+	Id     int
 	Person Person
 }
-
 
 type OrderForPromotedFields struct {
 	Id int
 	Person
 }
 
-
-func  main()  {
+func main() {
 	// struct a struct with values
 	p := Person{"Gorgine", 23}
 	fmt.Printf("Hi, guys. I am %s and I am %d years old.\n", p.Name, p.Age)
@@ -50,7 +46,7 @@ func  main()  {
 	o := Order{
 		Id: 100,
 		Person: Person{
-			Age: 18,
+			Age:  18,
 			Name: "Gorilia",
 		},
 	}

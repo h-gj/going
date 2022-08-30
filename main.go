@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"going/puzzles"
+	"going/pkg/reflection"
 	//"time"
 	//"time"
 )
@@ -45,5 +45,17 @@ func main() {
 	//
 	//fmt.Println(<-chan1)
 	//fmt.Println(<-chan1)
-	puzzles.Fibonacci(10)
+	//puzzles.Fibonacci(10)
+	//goroutine_practices.Sum5()
+	//goroutine_practices.PrintOvenAndOdd()
+	//cities := [4]string{"London", "NYC", "Colombo", "Tokyo"}
+	//fmt.Println(reflect.Kind(cities))
+	//fmt.Println("%T", cities)
+
+	//o := order{
+	//	ordId:      456,
+	//	customerId: 56,
+	//}
+	//createQuery(o)
+	reflection.Reflection()
 }
